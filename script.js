@@ -4,12 +4,12 @@ export function aufgabe01(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    if ( currentElement != "E") {
-    if ( currentElement != "e") {
-    result.push(currentElement)
+    if (currentElement != "E") {
+      if (currentElement != "e") {
+        result.push(currentElement)
+      }
+    }
   }
-}
-}
   return result.join("")
 }
 
@@ -19,25 +19,24 @@ export function aufgabe02(args) {
   return result
 }
 
-export function aufgabe03(args){
+export function aufgabe03(args) {
   const input = args
   let result = 0
 
   for (let i = 0; i < input.length; i++) {
-  const currentElement = input [i]
-  if (currentElement ==="e" || currentElement ==="E") {
-    result++
+    const currentElement = input[i]
+    if (currentElement === "e" || currentElement === "E") {
+      result++
+    }
   }
- }
   return result
 }
 
-export function aufgabe04(args){
-    const cleanText = args.replace(/[^\w\s]/gi, '')
-    const words = cleanText.split(/\s+/);
+export function aufgabe04(args) {
+  const cleanText = args.replace(/[^\w\s]/gi, "")
+  const words = cleanText.split(/\s+/)
 
-    return words.length;
-
+  return words.length
 }
 
 export function aufgabe05(args) {
@@ -47,7 +46,31 @@ export function aufgabe05(args) {
   } else {
     return true
   }
+}
+
+export function aufgabe06(args) {
+  const input = args
+  if (input.toLowerCase() === input) {
+    return false
+  } else {
+    return true
   }
+}
 
+export function aufgabe07(args) {
+  const input = args
+  if (input.toLowerCase() === input) {
+    return false
+  } else {
+    return true
+  }
+}
 
-
+export function aufgabe08(args) {
+  const input = args
+  if (input.toLowerCase() === input) {
+    return false
+  } else {
+    return true
+  }
+}
